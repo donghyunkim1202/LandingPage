@@ -5,6 +5,9 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    min-width: 800px; max-width: 1600px;
+    margin-left: auto; margin-right: auto;
 }
 
 
@@ -13,13 +16,14 @@ body {
     color:#F9FAF8;
     display: flex;
     align-items:center;
-    justify-content: right;
+    
     gap: 30px;
 
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 150px;
-    margin: auto;
+    margin: auto; 
+    justify-content: right;
 
     flex-wrap: wrap;
 }
@@ -27,11 +31,11 @@ body {
 .header-logo {
     color: #F9FAF8;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: bold;
 
     margin-top: 10px;
     margin-left: 150px;
-    
+
     align-items: center;
 
     position:absolute;
@@ -41,4 +45,82 @@ body {
 
 a:link, a:visited {
     color: #F9FAF8;
+    
 }
+
+.main-text {
+    background-color: #1F2937; font-size: 18px; color: #E5E7EB;
+    
+    display: flex;
+    column-gap: 5%;
+
+    padding-top: 10%; padding-bottom: 10%; 
+    padding-left: 150px;padding-right: 150px;
+}
+
+.main-text-title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.main-text-text {
+    font-size: 18px;
+    font-weight: normal;
+    color:#E5E7EB
+}
+
+/* Sign Up Button */
+.signupButton {
+    color:#E5E7EB; 
+    font-size: 18px;
+    line-height: 16px; 
+    border-radius: 8px; 
+    border: none;
+    font-weight: bold;
+    background-color: #3882F6;
+    display: inline-block;
+    padding-left: 30px; padding-right: 30px;
+    padding-top: 10px; padding-bottom: 10px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.signupButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.signupButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .signupButton:hover span {
+    padding-right: 25px;
+  }
+  
+  .signupButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.main-text-img {
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: gray;
+
+}
+
+/* Some random information */
+
+
